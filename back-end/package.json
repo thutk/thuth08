@@ -1,0 +1,37 @@
+{
+  "name": "health-clinic",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/bin/www",
+    "dev": "nodemon --inspect ./src/bin/www",
+    "test": "set NODE_ENV=test && set PORT=3002 && jest --testRegex=.test.js$ --forceExit --silent --runInBand",
+    "generate": "node generate-data.js"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "dotenv": "^16.3.1",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "~1.9.1",
+    "pdfkit-table": "^0.1.99",
+    "pg": "^8.11.3",
+    "typeorm": "^0.3.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.5",
+    "@babel/preset-env": "^7.23.5",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.2",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  }
+}

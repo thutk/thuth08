@@ -1,0 +1,124 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  /* background: #f1f1f1;  */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+.list-group-item.active, 
+.form-check-input:checked {
+  background-color: #212529;
+  border-color: #212529;
+}
+
+body {
+  height: 100%;
+  overflow-y: hidden;
+  font-family: 'Inter', sans-serif;
+
+  /* font-family: 'Lora', serif; */
+  /* font-family: 'PT Serif', serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Roboto Mono', monospace; */
+  /* font-family: 'Libre Franklin', sans-serif; */
+  /* font-family: 'Raleway', sans-serif; */
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: 'DM Sans', sans-serif; */
+  /* font-family: 'Playfair Display', serif; */
+  /* font-family: 'Rubik', sans-serif; */
+}
+
+.remove-margin {
+  margin-bottom: 0;
+}
+
+.scroll-container {
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+.scroll-container table tbody {
+  height: 100%;
+}
+
+.modal.active {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.absolute-container {
+  position: absolute;
+  top: 0;
+}
+
+/* Home */
+.home {
+  position: relative;
+}
+
+.home-bgr {
+  width: 100%;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+.home-title {
+  position: absolute;
+  top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.home-address {
+  position: absolute;
+  top: 80px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Login */
+.login-container {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-form {
+  width: 300px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* Medicine */
+.medicine-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+/* Bill */
+.input-number {
+  width: 70px;
+}
+
+.list-container {
+  max-height: 60vh;
+  overflow-y: scroll;
+  background-color: rgba(255, 255, 255, 0.5);
+}
